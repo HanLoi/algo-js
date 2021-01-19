@@ -1,13 +1,7 @@
 const readlineSync = require("readline-sync");
-var n = Math.floor (readlineSync.question("Tell me your first number that you want "));
-
-var a = Math.floor (readlineSync.question("Tell me your second number that you want "));
-
-var b = Math.floor (readlineSync.question("Tell me your third number that you want "));
-
-var c = Math.floor (readlineSync.question("Tell me your fourth number that you want "));
-
-var d = Math.floor (readlineSync.question("Tell me your fifth number that you want "));
-
-
-console.log(n + a + b + c + d)
+var n = Math.floor (readlineSync.question("How many time do you want to be questioned ? "));
+var n2 = new Number(0);
+while ( n !=0) {
+    n2 = n2 +  Math.floor (readlineSync.question("Give me a number "))
+    n --;}
+console.log(n2);
