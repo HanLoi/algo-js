@@ -3,9 +3,9 @@ function rand() {
 }
 const readlineSync = require("readline-sync");
 var n = new Number(0)
-n = Math.floor (readlineSync.question("How many number in your array ? "));
+n = Math.floor (readlineSync.question("How many number do you want in your array ? "));
 function multiRand(n) {
-    let array = [];
+    array = [];
     while (n !=0) {
     array.push(rand())
     n --;
