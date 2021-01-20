@@ -1,28 +1,18 @@
-function askTvSeries() {
-    let Serie = {
-    "name" : "True Detective",
-    "Saison" : [{
-        "year of Saison 1" : "2014 01 12",
-        "Year of Saison 2" : "2015 06 21",
-        "Year of Saison 3" : "2019 01 13",
-    }
-    ],
-    "Cast" : 
-        {
-        "Saison 1" : { 
-            "actor 1 of saison 1" : "Matthew McConaughey",
-            "actor 2 of saison 1" : "Woody Harrelson"},
-        "Saison 2" : {
-            "actor 1 of saison 2" : "Colin Farrel",
-            "actor 2 of saison 2" : "Rachel MacAdams"},
-        "Saison 3":  {
-            "actor 1 of saison 3" : "Mahershala Ali",
-            "actor 2 of saison 3" : "Carmen Ejogo"},
-            
-        },
-        
-    }
+function askTvSerie() {
+    let Serie = {}
+    const readlineSync = require("readline-sync");
+    a = readlineSync.question("Give name of your serie ")
+    Serie.name= a
+    b = readlineSync.question("Give year of your serie ")
+    Serie.date= b
+    c = readlineSync.question("Give 2 or 3 name of actor of your serie ")
+    Serie.actor= c
+
+
     return console.log(Serie)
 }
 
-askTvSeries()
+
+askTvSerie()
+
+
