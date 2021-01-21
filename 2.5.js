@@ -1,7 +1,12 @@
 const readlineSync = require("readline-sync");
-let number = readlineSync.question("What's your favorite number ?");
+var chiffre = new Number(0)
+chiffre = readlineSync.question("What's your favorite number ?");
 
-if (number != 42){
-    console.log("Are you sure ?")
-    let number = readlineSync.question("What's your favorite number ?");
+
+while (chiffre != 42){
+    console.log("Are you sure ?");
+    chiffre = readlineSync.question("What's your favorite number ?");
 }
+console.log("Great , me too !");
+
+
